@@ -1,0 +1,35 @@
+{
+  "name": "mytinerary-app",
+  "version": "1.0.0",
+  "description": "curso mindhub",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd .. && cd client && npm run start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.7",
+    "node-sass": "npm:sass@^1.24.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-jwt": "^4.0.0",
+    "prop-types": "^15.7.2",
+    "redux-thunk": "^2.3.0",
+    "validator": "^12.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4",
+    "concurrently": "^4.0.1"
+  }
+}
